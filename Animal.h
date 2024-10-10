@@ -4,14 +4,13 @@
 #include "Creature.h"
 
 class Animal : public Creature {
-private:
-    std::string species;
-    std::string genus;
-    double weight;
+protected:
+    string species;
+    string habitat;
 
 public:
-    Animal(const std::string& name, const std::string& species, const std::string& genus, double weight);
-    void showInfo() const override;
+    Animal(const string& name, const string& species, const string& habitat);
+    void showInfo();
 };
 
 #endif // ANIMAL_H

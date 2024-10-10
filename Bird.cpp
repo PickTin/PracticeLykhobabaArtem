@@ -1,9 +1,9 @@
 #include "Bird.h"
-#include <iostream>
 
-Bird::Bird(const std::string& name, bool isPredator)
-    : Creature(name), isPredator(isPredator) {}
+Bird::Bird(const string& name, const string& species, const string& habitat, bool isPredator)
+    : Animal(name, species, habitat), isPredator(isPredator) {}
 
-void Bird::showInfo() const {
-    std::cout << "Bird: " << name << ", Predator: " << (isPredator ? "Yes" : "No") << std::endl;
+void Bird::showInfo() {
+    cout << "Bird: " << name << ", Species: " << species << ", Habitat: " << habitat
+        << ", Predator: " << (isPredator ? "Yes" : "No") << endl;
 }

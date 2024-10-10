@@ -1,6 +1,7 @@
 #include "Creature.h"
-#include <iostream>
 
-Creature::Creature(const std::string& name) : name(name) {}
+Creature::Creature(const string& name) : name(name) {}
 
-Creature::~Creature() {}
+void Creature::showInfo() {
+    cout << "Creature: " << name << endl;
+}

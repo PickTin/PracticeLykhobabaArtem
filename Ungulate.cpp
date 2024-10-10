@@ -1,9 +1,9 @@
 #include "Ungulate.h"
-#include <iostream>
 
-Ungulate::Ungulate(const std::string& name, const std::string& habitat)
-    : Creature(name), habitat(habitat) {}
+Ungulate::Ungulate(const string& name, const string& species, const string& habitat, double weight, const string& hoofType)
+    : Mammal(name, species, habitat, weight), hoofType(hoofType) {}
 
-void Ungulate::showInfo() const {
-    std::cout << "Ungulate: " << name << ", Habitat: " << habitat << std::endl;
+void Ungulate::showInfo() {
+    cout << "Ungulate: " << name << ", Species: " << species << ", Habitat: " << habitat
+        << ", Weight: " << weight << " kg, Hoof Type: " << hoofType << endl;
 }

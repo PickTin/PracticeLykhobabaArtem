@@ -131,21 +131,20 @@
     <ClCompile Include="Bird.cpp" />
     <ClCompile Include="C++(2)Lesson6(pratctice).cpp" />
     <ClCompile Include="Creature.cpp" />
+    <ClCompile Include="Mammal.cpp" />
     <ClCompile Include="Ungulate.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animal.h" />
     <ClInclude Include="Bird.h" />
     <ClInclude Include="Creature.h" />
+    <ClInclude Include="Mammal.h" />
     <ClInclude Include="Task1.h" />
     <ClInclude Include="Ungulate.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Task1Diagram.cd" />
     <None Include="Task2Diagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="C++(2)Lesson6(pratctice).rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

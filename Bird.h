@@ -1,15 +1,15 @@
 #ifndef BIRD_H
 #define BIRD_H
 
-#include "Creature.h"
+#include "Animal.h"
 
-class Bird : public Creature {
-private:
+class Bird : public Animal {
+protected:
     bool isPredator;
 
 public:
-    Bird(const std::string& name, bool isPredator);
-    void showInfo() const override;
+    Bird(const string& name, const string& species, const string& habitat, bool isPredator);
+    void showInfo();
 };
 
 #endif // BIRD_H

@@ -1,10 +1,8 @@
 #include "Animal.h"
-#include <iostream>
 
-Animal::Animal(const std::string& name, const std::string& species, const std::string& genus, double weight)
-    : Creature(name), species(species), genus(genus), weight(weight) {}
+Animal::Animal(const string& name, const string& species, const string& habitat)
+    : Creature(name), species(species), habitat(habitat) {}
 
-void Animal::showInfo() const {
-    std::cout << "Animal: " << name << ", Species: " << species << ", Genus: " << genus
-        << ", Weight: " << weight << " kg" << std::endl;
+void Animal::showInfo() {
+    cout << "Animal: " << name << ", Species: " << species << ", Habitat: " << habitat << endl;
 }

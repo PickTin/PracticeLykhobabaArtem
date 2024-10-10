@@ -1,15 +1,15 @@
 #ifndef UNGULATE_H
 #define UNGULATE_H
 
-#include "Creature.h"
+#include "Mammal.h"
 
-class Ungulate : public Creature {
-private:
-    std::string habitat;
+class Ungulate : public Mammal {
+protected:
+    string hoofType;
 
 public:
-    Ungulate(const std::string& name, const std::string& habitat);
-    void showInfo() const override;
+    Ungulate(const string& name, const string& species, const string& habitat, double weight, const string& hoofType);
+    void showInfo();
 };
 
 #endif // UNGULATE_H

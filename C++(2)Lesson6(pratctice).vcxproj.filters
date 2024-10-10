@@ -30,6 +30,9 @@
     <ClCompile Include="Animal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Mammal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Task1.h">
@@ -47,14 +50,12 @@
     <ClInclude Include="Animal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Mammal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="Task1Diagram.cd" />
     <None Include="Task2Diagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="C++(2)Lesson6(pratctice).rc">
-      <Filter>Resource Files</Filter>
-    </ResourceCompile>
   </ItemGroup>
 </Project>
